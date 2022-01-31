@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95C5CD52-85BB-4222-9588-CB0DD9DDF289}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hospital</RootNamespace>
+    <AssemblyName>hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\bootstrap.css" />
+    <Content Include="bootstrap\bootstrap.js" />
+    <Content Include="bootstrap\bootstrap.min.css" />
+    <Content Include="bootstrap\bootstrap.min.js" />
+    <Content Include="bootstrap\font-awesome-5.6.3.css" />
+    <Content Include="bootstrap\fontawesome.css" />
+    <Content Include="bootstrap\fontawesome.js" />
+    <Content Include="bootstrap\fontawesome.min.css" />
+    <Content Include="bootstrap\fontawesome.min.js" />
+    <Content Include="bootstrap\holder.min.js" />
+    <Content Include="bootstrap\jquery-3.3.1.min.js" />
+    <Content Include="bootstrap\mdb.css" />
+    <Content Include="bootstrap\mdb.js" />
+    <Content Include="bootstrap\mdb.min.css" />
+    <Content Include="bootstrap\mdb.min.js" />
+    <Content Include="bootstrap\popper.min.js" />
+    <Content Include="bootstrap\regular.css" />
+    <Content Include="bootstrap\regular.js" />
+    <Content Include="bootstrap\regular.min.css" />
+    <Content Include="bootstrap\regular.min.js" />
+    <Content Include="bootstrap\Style.css" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\background2.jpg" />
+    <Content Include="img\dr.png" />
+    <Content Include="img\gallary1.jfif" />
+    <Content Include="img\gallary2.jpg" />
+    <Content Include="img\gallary4.jpg" />
+    <Content Include="img\gallary5.jpg" />
+    <Content Include="img\gallary6.jpg" />
+    <Content Include="img\gallary7.jpg" />
+    <Content Include="img\gallary8.jpg" />
+    <Content Include="img\gallary9.png" />
+    <Content Include="img\hopital.png" />
+    <Content Include="img\hospital-infrastructure-quality.jpg" />
+    <Content Include="img\hospital.jpg" />
+    <Content Include="img\pnr.png" />
+    <Content Include="img\pnr3.png" />
+    <Content Include="img\pnr4.png" />
+    <Content Include="img\pr1.jpg" />
+    <Content Include="img\pr2.jpg" />
+    <Content Include="img\pr3.jpg" />
+    <Content Include="img\ptn.png" />
+    <Content Include="img\s2.jpg" />
+    <Content Include="img\s3.jpg" />
+    <Content Include="img\services1.jpg" />
+    <Content Include="img\services2.jpg" />
+    <Content Include="img\services3.jpg" />
+    <Content Include="img\services4.jpg" />
+    <Content Include="img\team-of-doctors.jpg" />
+    <Content Include="src\aboutus.html" />
+    <Content Include="src\contactus.html" />
+    <Content Include="src\gallary.html" />
+    <Content Include="src\index.html" />
+    <Content Include="src\our services.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:30500/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
